@@ -13,8 +13,10 @@ const robotoCondensed = Roboto_Condensed({
 });
 
 export const metadata: Metadata = {
-  title: "JCMK",
-  description: "The personal portfolio of Tubatse Katlego Moloi",
+  title:
+    "Katlego Moloi | Software Developer & Data Enthusiast | BSc IT Graduate",
+  description:
+    "BSc Information Technology graduate double majoring in Computer Science and Business Management. Software developer passionate about data, full-stack development, and building scalable digital solutions.",
 };
 
 export default function RootLayout({
@@ -25,10 +27,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${roboto.variable} ${robotoCondensed.variable} antialiased`}
+        className={`${roboto.variable} ${robotoCondensed.variable} antialiased font-sans`}
       >
         {children}
       </body>
     </html>
   );
 }
+
+
