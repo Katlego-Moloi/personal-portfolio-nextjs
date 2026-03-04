@@ -13,6 +13,10 @@ const robotoCondensed = Roboto_Condensed({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: '/favicon.svg',
+  },
+  
   title:
     "Katlego Moloi | Software Developer & Data Enthusiast | BSc IT Graduate",
   description:
