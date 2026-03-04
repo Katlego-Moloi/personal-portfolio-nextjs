@@ -7,6 +7,9 @@ import { Grid } from "@/components/grid"
 import SimpleParallax from "simple-parallax-js";
 import { RecentProjects } from '@/components/recent-projects'
 import { navItems } from '@/data'
+import { Testimonials } from '@/components/testimonials'
+import { Experience } from '@/components/experience'
+
 
 const Home = () => {
   return (
@@ -17,6 +20,8 @@ const Home = () => {
         <HeroSection />
         <Grid/>
         <RecentProjects/>
+        <Testimonials/> 
+        <Experience/>
 
       </div>
     </main>

@@ -1,16 +1,16 @@
 import React from 'react'
+import { AnimatedTestimonials } from '@/components/ui/animated-testimonials'
+import { testimonials } from '@/data'
 
-export const Restimonials = () => {
+export const Testimonials = () => {
 	return (
 		<section id="projects" className="py-20">
 			<h1 className="heading">
-				A small selection of {''}
-				<span className="text-primary">
-					Recent Projects
-				</span>
+					Hear from <span className="text-primary">people</span> who know me
 			</h1>
 
 			<div className="flex flex-wrap items-center justify-center w-full gap-16 mt-10">
+				<AnimatedTestimonials testimonials={testimonials}/>
 			</div>
 		</section>
 	)
