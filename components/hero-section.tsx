@@ -26,8 +26,7 @@ const HeroSection = () => {
           </p>
 
           <TextGenerateEffect
-            words="Growth in Motion. Code in Production. From
-          Curiosity to Creation."
+            words="Growth in Motion. Code in Production. From Curiosity to Creation."
             className="text-center text-[40px] md:text-5xl lg:text-6xl"
           />
 

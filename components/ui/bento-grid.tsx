@@ -1,5 +1,8 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { IoCopyOutline } from "react-icons/io5";
+import {  } from "react";
+import { motion, useScroll, useTransform } from "motion/react";
+import SimpleParallax from "simple-parallax-js";
 
 import Lottie from "react-lottie";
 
@@ -76,20 +79,27 @@ export const BentoGridItem = ({
         className
       )}
       style={{
-        background: "linear-gradient(121deg, rgba(101, 78, 163, 1) 0%, rgba(230, 138, 138, 1) 50%, rgb(0, 201.01, 167.01) 100%)",
+        background: "linear-gradient(121deg, oklch(0.4893 0.1321 293.38) 0%, oklch(0.5622 0.1625 257.07) 80%, oklch(0.7461 0.1411 174.66) 100%)",
       }}
     >
       {/* add img divs */}
       <div className={`${id === 6 && "flex justify-center"} h-full`}>
-        <div className="w-full h-full absolute">
+        <div className="w-full h-full absolute overflow-hidden">
           {img && (
-            <img
-              src={img}
-              alt={img}
-              className={cn(imgClassName, "object-cover object-center ")}
-            />
+            id === 1 ? (
+              <SimpleParallax>
+                <img src="/background-collage.webp" scale={1.1} alt="image" />
+              </SimpleParallax>
+            ) : (
+              <img
+                src={img}
+                alt={img}
+                className={cn(imgClassName, "object-cover object-center")}
+              />
+            )
           )}
         </div>
+
         <div
           className={`absolute right-0 -bottom-5 ${id === 5 && "w-full opacity-80"
             } `}
@@ -102,6 +112,7 @@ export const BentoGridItem = ({
             />
           )}
         </div>
+
         {id === 6 && (
           <BackgroundGradientAnimation>
             <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
@@ -134,8 +145,7 @@ export const BentoGridItem = ({
                 {leftLists.map((item, i) => (
                   <span
                     key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                   >
                     {item}
                   </span>
@@ -147,8 +157,7 @@ export const BentoGridItem = ({
                 {rightLists.map((item, i) => (
                   <span
                     key={i}
-                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 
-                    lg:opacity-100 rounded-lg text-center bg-[#10132E]"
+                    className="lg:py-4 lg:px-3 py-2 px-3 text-xs lg:text-base opacity-50 lg:opacity-100 rounded-lg text-center bg-[#10132E]"
                   >
                     {item}
                   </span>
