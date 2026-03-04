@@ -14,7 +14,7 @@ export const Experience = () => {
           <HoverBorderGradient
             containerClassName="rounded-4xl bg-transparent"
             as="button"
-            className="flex items-center space-x-2"
+            className="flex items-center space-x-2 bg-background/70"
           >
             <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
               <img

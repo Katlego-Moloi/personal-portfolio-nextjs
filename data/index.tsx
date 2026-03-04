@@ -1,8 +1,12 @@
+import { BsPersonBoundingBox } from "react-icons/bs";
+import { MdReviews, MdWork } from "react-icons/md";
+import { GrContactInfo } from "react-icons/gr";
+
 export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
-  { name: "Contact", link: "#contact" },
+  { name: "About", link: "#about", icon: <BsPersonBoundingBox />},
+  { name: "Projects", link: "#projects", icon: <MdWork />},
+  { name: "Testimonials", link: "#testimonials", icon: <MdReviews />},
+  { name: "Contact", link: "#contact", icon: <GrContactInfo />},
 ];
 
 export const gridItems = [
