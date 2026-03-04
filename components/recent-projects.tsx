@@ -13,54 +13,57 @@ export const RecentProjects = () => {
 				</span>
 			</h1>
 
-			<div className="flex flex-wrap items-center justify-center gap-16 mt-10">
+			<div className="flex flex-wrap items-center justify-center w-full gap-16 mt-10">
 				{projects.map(({ id, title, des, img, iconLists, link }) => (
-					<div key={id} className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-96">
+					<div key={id} className="lg-h-[30rem] h-[50vh] flex items-center justify-center w-[28rem]">
 						<CometCard>
-							<div className="relative flex items-center justify-center w-full overflow-hidden h-[20vh] lg:h-[25vh] mb-8">
-				                <div className="relative w-full h-full overflow-hidden lg:rounded-3xl">
-				                  <img src="/images/bg.png" alt="bgimg" />
-				                </div>
+							<div className="relative flex items-center justify-center w-full overflow-hidden lg-h-[17rem] h-[28vh] mb-8">
+	              <div className="relative w-full h-full overflow-hidden rounded-3xl">
+	                <img src="/images/bg.png" alt="bgimg" />
+	              </div>
 
-				                <img
-				                  src={img}
-				                  alt="cover"
-				                  className="absolute z-10 bottom-0 rounded-xl"/>
-				            </div>
+	              <img
+	                src={img}
+	                alt="cover"
+	                className="absolute z-10 bottom-0 rounded-xl w-full"
+	              />
+				      </div>
 
-			                <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
-			                  {title}
-			                </h1>
+	            <div className="px-5 pb-3	">
+		            <h1 className="font-bold lg:text-xl md:text-xl text-base line-clamp-1">
+		              {title}
+		            </h1>
 
-                            <p className="lg:text-xl lg:font-normal font-light text-sm line-clamp-2"
-                              style={{ color: "#BEC1DD", margin: "1vh 0"}}>
-                              {des}
-                            </p>
+	              <p className="lg:text-l lg:font-normal font-light text-sm line-clamp-2"
+	                style={{ color: "#BEC1DD", margin: "1vh 0"}}>
+	                {des}
+	              </p>
 
-                            <div className="flex items-center justify-between mt-7 mb-3">
-                              <div className="flex items-center">
-                                {iconLists.map((icon, index) => (
-                                  <div
-                                    key={index}
-                                    className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
-                                    style={{
-                                      transform: `translateX(-${5 * index + 2}px)`,
-                                    }}
-                                  >
-                                    <img src={icon} alt="icon5" className="p-2" />
-                                  </div>
-                                ))}
-                              </div>
+	              <div className="flex items-center justify-between mt-7 mb-3 w-full">
+	                <div className="flex items-center">
+	                  {iconLists.map((icon, index) => (
+	                    <div
+	                      key={index}
+	                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+	                      style={{
+	                        transform: `translateX(-${5 * index + 2}px)`,
+	                      }}
+	                    >
+	                      <img src={icon} alt="icon5" className="p-2" />
+	                    </div>
+	                  ))}
+	                </div>
 
-                              <a href={link} target="_blank" rel="noopener noreferrer">
-                              	<div className="flex justify-center items-center">
-                                <p className="flex lg:text-xl md:text-xs text-sm text-purple">
-                                  Check Live Site
-                                </p>
-                                <FaLocationArrow className="ms-3" color="#CBACF9" />
-                              </div>
-                              </a>
-              	            </div>
+	                <a href={link} target="_blank" rel="noopener noreferrer">
+		                <div className="flex justify-center items-center">
+		                  <p className="flex lg:text-l md:text-xs text-sm text-purple">
+		                    Check Live Site
+		                  </p>
+		                  <FaLocationArrow className="ms-3" color="#CBACF9" />
+	                	</div>
+	                </a>
+		            </div>	             
+	            </div>
 						</CometCard>
 					</div>))}
 			</div>

@@ -87,8 +87,8 @@ export const BentoGridItem = ({
         <div className="w-full h-full absolute overflow-hidden">
           {img && (
             id === 1 ? (
-              <SimpleParallax>
-                <img src="/background-collage.webp" scale={1.1} alt="image" />
+              <SimpleParallax scale={1.1}>
+                <img src="/images/background-collage.webp" alt="image" />
               </SimpleParallax>
             ) : (
               <img
