@@ -172,12 +172,8 @@ export const BentoGridItem = ({
           )}
           {id === 6 && (
             <div className="mt-5 md:mt-0 relative">
-              <div
-                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
-                  }`}
-              >
-                {/* <img src="/confetti.gif" alt="confetti" /> */}
-                <Lottie options={defaultOptions} height={200} width={400} />
+              <div className={`absolute -bottom-5 right-0 ${copied ? "block" : "hidden"}`}>
+                <Lottie key={String(copied)} options={defaultOptions} height={200} width={400} />
               </div>
 
               <MagicButton

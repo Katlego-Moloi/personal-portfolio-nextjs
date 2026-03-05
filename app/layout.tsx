@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Roboto, Roboto_Condensed } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const roboto = Roboto({
@@ -35,6 +36,8 @@ export default function RootLayout({
         className={`${roboto.variable} ${robotoCondensed.variable} antialiased font-sans`}
       >
         {children}
+
+        <Analytics/>
         <SpeedInsights />
       </body>
     </html>
