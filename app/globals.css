@@ -117,42 +117,6 @@
   }
 }
 
-.carousel {
-  border: 5px solid red;
-  display: flex;
-  overflow-x: auto;
-}
-
- /* Chrome, Safari and Opera */
-.carousel::-webkit-scrollbar {
-  display: none;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none; 
-}
-
-.group {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1em;
-  animation: moveLeft 5s infinite linear;
-}
-
-.card {
-  flex: 0 0 5em;
-  height: 5em;
-  padding: 1em;
-  background: cornflowerblue;
-  border-radius: .2em;
-  align-content: center;
-}
-
-@keyframes moveLeft {
-  from { translateX: 0; }
-  to { translateX: -100%; }
-}
-
-
 @layer base {
   * {
     @apply border-border outline-ring/50;

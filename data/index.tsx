@@ -1,6 +1,9 @@
 import { BsPersonBoundingBox } from "react-icons/bs";
+import { SlBadge } from "react-icons/sl";
 import { MdReviews, MdWork } from "react-icons/md";
 import { GrContactInfo } from "react-icons/gr";
+import { IconBrandGithub, IconBrandLinkedin, IconTerminal, IconBrandInstagram } from "@tabler/icons-react";
+
 
 export const navItems = [
   { name: "About", link: "#about", icon: <BsPersonBoundingBox />},
@@ -148,58 +151,30 @@ export const workExperience = [
   },
 ];
 
-export const microsoftCerts = [
-  {
-    id: "azure-ai",
-    name: "Azure AI Fundamentals",
-    issuer: "Microsoft",
-    badge:
-      "https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg?branch=main",
-    // Use the specific badge image for AI-900
-    badgeUrl:
-      "https://images.credly.com/size/340x340/images/4136ced8-75d5-4afb-8677-40b6236e2672/azure-ai-fundamentals-600x600.png",
-    url: "https://learn.microsoft.com/api/credentials/share/en-us/TubatseKatlegoMoloi-5390/7A1AC9123D6A5777?sharingId=2BD380D08A96A4A5",
-  },
-  {
-    id: "m365",
-    name: "Microsoft 365 Fundamentals",
-    issuer: "Microsoft",
-    badgeUrl:
-      "https://images.credly.com/size/340x340/images/0c6d9839-f468-4adc-987d-9a9b4e1a2efa/image.png",
-    url: "https://learn.microsoft.com/api/credentials/share/en-us/TubatseKatlegoMoloi-5390/32E2E5AC0B9BCD35?sharingId=2BD380D08A96A4A5",
-  },
-];
-
-export const credlyCerts = [
-  {
-    id: "e2d518f0-1b49-4254-99b2-f454ab55b67b",
-    label: "Credly Badge 1",
-  },
-  {
-    id: "c7cc2760-3261-470b-8739-d4e1a693f366",
-    label: "Credly Badge 2",
-  },
-  {
-    id: "89661990-df4f-444e-a29e-5d5d5813dba5",
-    label: "Credly Badge 3",
-  },
-  {
-    id: "edd5250f-eb13-4dbb-9867-3f1fb64f5b4e",
-    label: "Credly Badge 4",
-  },
-];
-
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    icon: <IconBrandGithub/>,
+    link: "https://github.com/Katlego-Moloi"
   },
   {
     id: 2,
-    img: "/twit.svg",
+    icon: <IconBrandLinkedin/>,
+    link: "https://www.linkedin.com/in/tubatse-katlego-moloi/"
   },
   {
     id: 3,
-    img: "/link.svg",
+    icon: <SlBadge/>,
+    link: "https://www.credly.com/users/tubatse-katlego-moloi"
+  },
+  {
+    id: 4,
+    icon: <IconTerminal/>,
+    link: "https://leetcode.com/u/user6473KO/"
+  },
+  {
+    id: 5,
+    icon: <IconBrandInstagram/>,
+    link: "https://www.instagram.com/i.luv.bluee/"
   },
 ];
