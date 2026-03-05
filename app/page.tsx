@@ -9,6 +9,7 @@ import { RecentProjects } from '@/components/recent-projects'
 import { navItems } from '@/data'
 import { Testimonials } from '@/components/testimonials'
 import { Experience } from '@/components/experience'
+import { Footer } from '@/components/footer'
 
 
 const Home = () => {
@@ -16,12 +17,12 @@ const Home = () => {
     <main className="relative bg-black-100 flex justify-center items-center overflow-hidden flex-col mx-auto sm:px-10 px-5">
       <div className="max-w-7xl w-full bg-red">
         <FloatingNav navItems={navItems}/>
-
         <HeroSection />
         <Grid/>
         <RecentProjects/>
         <Testimonials/> 
         <Experience/>
+        <Footer/>
 
       </div>
     </main>

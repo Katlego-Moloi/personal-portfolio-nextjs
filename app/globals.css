@@ -117,6 +117,16 @@
   }
 }
 
+@keyframes slideLeft {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+
+.animate-slide-infinite {
+  animation: slideLeft 5s linear infinite; /* Shorthand for duration, timing, and count */
+}
+
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -129,5 +139,16 @@
 @layer utilities {
   .heading {
     @apply font-bold text-4xl md:text-5xl text-center;
+  }
+  
+   /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* IE, Edge and Firefox */
+  .no-scrollbar {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
   }
 }

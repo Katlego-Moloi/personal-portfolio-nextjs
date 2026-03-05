@@ -41,6 +41,9 @@ importers:
       react-lottie:
         specifier: ^1.2.10
         version: 1.2.10(react@19.2.0)
+      require-in-the-middle:
+        specifier: ^8.0.1
+        version: 8.0.1
       simple-parallax-js:
         specifier: ^6.3.3
         version: 6.3.3(react-dom@19.2.0(react@19.2.0))(react@19.2.0)

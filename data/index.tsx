@@ -106,66 +106,86 @@ export const testimonials = [
         "Mr. Katlego Moloi has been an exemplary Career Ambassador from April to November 2024. Throughout his tenure, Katlego has been instrumental in helping organise events, present Career Services workshops, and maintain Career Hub (A multi-faceted interactive work readiness and job portal available to all UFS students).",
       name: "Mpho Thito",
       designation: "Student Officeer (Line Manager)",
-      src: "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?q=80&w=3560&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      src: "/images/mpho.webp",
     },
     {
       quote:
         "Implementation was seamless and the results exceeded our expectations. The platform's flexibility is remarkable.",
-      name: "Michael Rodriguez",
-      designation: "CTO at InnovateSphere",
-      src: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "This solution has significantly improved our team's productivity. The intuitive interface makes complex tasks simple.",
-      name: "Emily Watson",
-      designation: "Operations Director at CloudScale",
-      src: "https://images.unsplash.com/photo-1623582854588-d60de57fa33f?q=80&w=3540&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "Outstanding support and robust features. It's rare to find a product that delivers on all its promises.",
-      name: "James Kim",
-      designation: "Engineering Lead at DataPro",
-      src: "https://images.unsplash.com/photo-1636041293178-808a6762ab39?q=80&w=3464&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      quote:
-        "The scalability and performance have been game-changing for our organization. Highly recommend to any growing business.",
-      name: "Lisa Thompson",
-      designation: "VP of Technology at FutureNet",
-      src: "https://images.unsplash.com/photo-1624561172888-ac93c696e10c?q=80&w=2592&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      name: "Ntombinkulu Khumalo",
+      designation: "COO at MoneyMart",
+      src: "/images/ntombi.webp",
     },
   ];
 
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
-    className: "md:col-span-2",
-    thumbnail: "/illustrations/exp1.svg",
+    title: "IT Support Placement - UJ",
+    desc: "Provided technical support by logging and resolving IT incidents, maintaining system access, and applying structured troubleshooting in a live enterprise environment.",
+    className: "md:col-span-2 rounded-xl",
+    thumbnail: "/images/uj.webp",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Mobile App Dev - Tontrac",
+    desc: "Completed CompTIA and Microsoft training while gaining practical experience in IT support, systems administration fundamentals, and professional service delivery.",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/illustrations/exp2.svg",
+    thumbnail: "/images/tontrac.webp",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Career Ambassador - UFS Career Services",
+    desc: "Supported student work-readiness through presentations, one-on-one guidance, and collaboration with student organisations to promote career development.",
     className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/illustrations/exp3.svg",
+    thumbnail: "/images/ufs.webp",
   },
   {
     id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
+    title: "Team Member, Deputy President & Treasurer - Enactus UFSQ",
+    desc: "Led and contributed to social entrepreneurship projects focused on community impact, gaining experience in leadership, project management, and financial oversight.",
     className: "md:col-span-2",
-    thumbnail: "/illustrations/exp4.svg",
+    thumbnail: "/images/enactusufsq.webp",
+  },
+];
+
+export const microsoftCerts = [
+  {
+    id: "azure-ai",
+    name: "Azure AI Fundamentals",
+    issuer: "Microsoft",
+    badge:
+      "https://learn.microsoft.com/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg?branch=main",
+    // Use the specific badge image for AI-900
+    badgeUrl:
+      "https://images.credly.com/size/340x340/images/4136ced8-75d5-4afb-8677-40b6236e2672/azure-ai-fundamentals-600x600.png",
+    url: "https://learn.microsoft.com/api/credentials/share/en-us/TubatseKatlegoMoloi-5390/7A1AC9123D6A5777?sharingId=2BD380D08A96A4A5",
+  },
+  {
+    id: "m365",
+    name: "Microsoft 365 Fundamentals",
+    issuer: "Microsoft",
+    badgeUrl:
+      "https://images.credly.com/size/340x340/images/0c6d9839-f468-4adc-987d-9a9b4e1a2efa/image.png",
+    url: "https://learn.microsoft.com/api/credentials/share/en-us/TubatseKatlegoMoloi-5390/32E2E5AC0B9BCD35?sharingId=2BD380D08A96A4A5",
+  },
+];
+
+export const credlyCerts = [
+  {
+    id: "e2d518f0-1b49-4254-99b2-f454ab55b67b",
+    label: "Credly Badge 1",
+  },
+  {
+    id: "c7cc2760-3261-470b-8739-d4e1a693f366",
+    label: "Credly Badge 2",
+  },
+  {
+    id: "89661990-df4f-444e-a29e-5d5d5813dba5",
+    label: "Credly Badge 3",
+  },
+  {
+    id: "edd5250f-eb13-4dbb-9867-3f1fb64f5b4e",
+    label: "Credly Badge 4",
   },
 ];
 
