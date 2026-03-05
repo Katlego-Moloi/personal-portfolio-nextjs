@@ -34,6 +34,7 @@ export default function RootLayout({
         className={`${roboto.variable} ${robotoCondensed.variable} antialiased font-sans`}
       >
         {children}
+        <SpeedInsights />
       </body>
     </html>
   );
