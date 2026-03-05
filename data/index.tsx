@@ -99,7 +99,7 @@ export const projects = [
     des: "My second personal portfolio website and introduction to React, Three.js and Tailwind.css",
     img: "/images/projects/jcmk.webp",
     iconLists: ["/icons/re.svg", "/icons/vite.svg", "/icons/ts.svg", "/icons/three.svg", "/icons/spring.svg"],
-    link: "https://github.com/Katlego-Moloi/personal-portfolio-react",
+    link: "https://jcmkreact.vercel.app",
   },
 ];
 

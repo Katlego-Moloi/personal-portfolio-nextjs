@@ -17,4 +17,4 @@ jobs:
           # This pulls the secret you just saved in GitHub Settings
           SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
           SENTRY_ORG: jcmk
-          SENTRY_PROJECT: javascript-nextjs
+          SENTRY_PROJECT: personal-portfolio-nextjs
