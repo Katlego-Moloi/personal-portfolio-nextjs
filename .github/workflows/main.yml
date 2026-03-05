@@ -1,0 +1,20 @@
+name: Sentry Release
+on:
+  push:
+    branches: [ "main" ] # Runs every time you push to the main branch
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Create Sentry release
+        uses: getsentry/action-release@v1
+        env:
+          # This pulls the secret you just saved in GitHub Settings
+          SENTRY_AUTH_TOKEN: ${{ secrets.SENTRY_AUTH_TOKEN }}
+          SENTRY_ORG: jcmk
+          SENTRY_PROJECT: javascript-nextjs
