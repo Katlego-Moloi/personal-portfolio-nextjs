@@ -48,46 +48,57 @@ export const Experience = () => {
             </div>
           </HoverBorderGradient>
         ))}
+      </div>
 
-        <div className="flex mt-5 w-full overflow-x-auto no-scrollbar">
-          <div className="flex flex-row items-center justify-center gap-16 pl-16 w-full animate-slide-infinite">
+      {/* Certifications infinite carousel — full width, outside the grid */}
+        <div className="mt-8 w-full carousel">
+          {/* Fade masks */}
+          <div className="pointer-events-none absolute inset-y-0 left-0 w-24 z-10"
+            style={{ background: "linear-gradient(to right, var(--background), transparent)" }} />
+          <div className="pointer-events-none absolute inset-y-0 right-0 w-24 z-10"
+            style={{ background: "linear-gradient(to left, var(--background), transparent)" }} />
+
+          <div className="group">
+            {/* Set A */}
             {microsoftCerts.map((cert) => (
-            <a
-              key={cert.id}
-              href={cert.url}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div className="p-16 flex-none basis-[5em]">
-                <img
-                  src={cert.badgeUrl}
-                  alt={cert.name}
-                  onError={(e) => {
-                    e.target.style.display = "none";
-                    e.target.nextSibling.style.display = "flex";
-                  }}
+              <a key={`a-${cert.id}`} href={cert.url} target="_blank" rel="noopener noreferrer">
+                <div className="card">
+                  <img src={cert.badgeUrl} alt={cert.name} className="w-24 h-24 object-contain" />
+                </div>
+              </a>
+            ))}
+
+            {credlyCerts.map((cert) => (
+              <div key={`a-${cert.id}`} className="card">
+                <div
+                  data-iframe-width="100"
+                  data-iframe-height="180"
+                  data-share-badge-id={cert.id}
+                  data-share-badge-host="https://www.credly.com"
                 />
               </div>
-            </a>
-          ))}
+            ))}
 
-          {credlyCerts.map((cert) => (
-            <div
-              key={cert.id}
-              className="p-1 flex-none basis-[5em]"
-            >
-              <div
-                data-iframe-width="150"
-                data-iframe-height="270"
-                data-share-badge-id={cert.id}
-                data-share-badge-host="https://www.credly.com"
-              />
-            </div>
-          ))}
-
+            {/* Set B — exact duplicate for seamless loop */}
+            {microsoftCerts.map((cert) => (
+              <a key={`b-${cert.id}`} href={cert.url} target="_blank" rel="noopener noreferrer">
+                <div className="card">
+                  <img src={cert.badgeUrl} alt={cert.name} className="w-24 h-24 object-contain" />
+                </div>
+              </a>
+            ))}
+            {credlyCerts.map((cert) => (
+              <div key={`b-${cert.id}`} className="card">
+                <div
+                  data-iframe-width="100"
+                  data-iframe-height="180"
+                  data-share-badge-id={cert.id}
+                  data-share-badge-host="https://www.credly.com"
+                />
+              </div>
+            ))}
           </div>
         </div>
-      </div>
     </div>
   );
 };
