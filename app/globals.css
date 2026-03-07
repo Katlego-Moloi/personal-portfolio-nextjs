@@ -48,9 +48,9 @@
   --animate-second: moveInCircle 20s reverse infinite;
   --animate-third: moveInCircle 40s linear infinite;
   --animate-fourth: moveHorizontal 40s ease infinite;
-  --animate-fifth: moveInCircle 20s ease infinite;
+  --animate-fifth: moveInCircle 10s ease infinite;
 
-  --animate-move-left: moveLeft 15s linear infinite;
+  --animate-move-left: moveLeft 20s linear infinite;
 }
 
 :root {
@@ -145,5 +145,9 @@
 @layer utilities {
   .heading {
     @apply font-bold text-4xl md:text-5xl text-center;
+  }
+
+  .carousel-pause-on-hover:hover * {
+    animation-play-state: paused;
   }
 }

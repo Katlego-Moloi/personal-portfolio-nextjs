@@ -155,43 +155,43 @@ export const certs = [
   {
     img: "/images/certifications/cysa.png",
     label: "CyberSecurity Analyst+",
-    link: ""
+    link: "https://www.credly.com/badges/cae44ce5-cbdd-42cc-824d-13e484395021/public_url"
 
   },
   {
     img: "/images/certifications/ms.svg",
     label: "Azure AI Fundamentals",
-    link: ""
+    link: "https://learn.microsoft.com/api/credentials/share/en-us/TubatseKatlegoMoloi-5390/7A1AC9123D6A5777?sharingId=2BD380D08A96A4A5"
 
   },
   {
     img: "/images/certifications/network.png",
     label: "CompTIA Network+",
-    link: ""
+    link: "https://www.credly.com/badges/8f91437f-b25f-4bf3-8941-91cd4b9b52df/public_url"
 
   },
   {
     img: "/images/certifications/server.png",
     label: "Comptia Server+",
-    link: ""
+    link: "https://www.credly.com/badges/ca123802-5039-4952-83ff-ac7a417a9090/public_url"
 
   },
   {
     img: "/images/certifications/ms.svg",
     label: "Microsoft365 Fundamentals",
-    link: ""
+    link: "https://learn.microsoft.com/api/credentials/share/en-us/TubatseKatlegoMoloi-5390/32E2E5AC0B9BCD35?sharingId=2BD380D08A96A4A5"
 
   },
   {
     img: "/images/certifications/security.png",
     label: "CompTIA Security+",
-    link: ""
+    link: "https://www.credly.com/badges/e4486d10-9200-4a62-8017-41b0c78e6afa/public_url"
 
   },
   {
     img: "/images/certifications/a-ce.png",
     label: "Comptia A+",
-    link: ""
+    link: "https://www.credly.com/badges/f5c1c793-9891-496c-92d5-a895c8220277/public_url"
 
   },
 ];
