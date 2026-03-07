@@ -49,6 +49,8 @@
   --animate-third: moveInCircle 40s linear infinite;
   --animate-fourth: moveHorizontal 40s ease infinite;
   --animate-fifth: moveInCircle 20s ease infinite;
+
+  --animate-move-left: moveLeft 15s linear infinite;
 }
 
 :root {
@@ -117,41 +119,19 @@
   }
 }
 
-.carousel {
-  border: 5px solid red;
-  display: flex;
-  overflow-x: auto;
+.no-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
 }
 
- /* Chrome, Safari and Opera */
-.carousel::-webkit-scrollbar {
-  display: none;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none; 
-}
-
-.group {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1em;
-  animation: moveLeft 5s infinite linear;
-}
-
-.card {
-  flex: 0 0 5em;
-  height: 5em;
-  padding: 1em;
-  background: cornflowerblue;
-  border-radius: .2em;
-  align-content: center;
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome/Safari/Opera */
 }
 
 @keyframes moveLeft {
-  from { translateX: 0; }
-  to { translateX: -100%; }
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
 }
-
 
 @layer base {
   * {
