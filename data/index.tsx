@@ -151,6 +151,51 @@ export const workExperience = [
   },
 ];
 
+export const certs = [
+  {
+    img: "/images/certifications/cysa.png",
+    label: "CyberSecurity Analyst+",
+    link: ""
+
+  },
+  {
+    img: "/images/certifications/ms.svg",
+    label: "Azure AI Fundamentals",
+    link: ""
+
+  },
+  {
+    img: "/images/certifications/network.png",
+    label: "CompTIA Network+",
+    link: ""
+
+  },
+  {
+    img: "/images/certifications/server.png",
+    label: "Comptia Server+",
+    link: ""
+
+  },
+  {
+    img: "/images/certifications/ms.svg",
+    label: "Microsoft365 Fundamentals",
+    link: ""
+
+  },
+  {
+    img: "/images/certifications/security.png",
+    label: "CompTIA Security+",
+    link: ""
+
+  },
+  {
+    img: "/images/certifications/a-ce.png",
+    label: "Comptia A+",
+    link: ""
+
+  },
+];
+
 export const socialMedia = [
   {
     id: 1,

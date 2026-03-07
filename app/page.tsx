@@ -10,6 +10,7 @@ import { navItems } from '@/data'
 import { Testimonials } from '@/components/testimonials'
 import { Experience } from '@/components/experience'
 import { Footer } from '@/components/footer'
+import { Certifications } from '@/components/certifications'
 
 
 const Home = () => {
@@ -19,6 +20,7 @@ const Home = () => {
         <FloatingNav navItems={navItems}/>
         <HeroSection />
         <Grid/>
+        <Certifications/>
         <RecentProjects/>
         <Testimonials/> 
         <Experience/>

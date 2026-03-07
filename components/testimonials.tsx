@@ -4,12 +4,12 @@ import { testimonials } from '@/data'
 
 export const Testimonials = () => {
 	return (
-		<section id="testimonials" className="py-20">
+		<section id="testimonials" className="py-10">
 			<h1 className="heading">
 					Hear from <span className="text-primary">people</span> who know me
 			</h1>
 
-			<div className="flex flex-wrap items-center justify-center w-full gap-16 mt-10">
+			<div className="flex flex-wrap items-center justify-center w-full gap-16">
 				<AnimatedTestimonials testimonials={testimonials}/>
 			</div>
 		</section>

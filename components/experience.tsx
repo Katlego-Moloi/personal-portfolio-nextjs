@@ -4,7 +4,7 @@ import { HoverBorderGradient } from "./ui/hover-border-gradient";
 
 export const Experience = () => {
   return (
-    <div className="py-20 w-full" id="experience">
+    <div className="w-full" id="experience">
       <h1 className="heading">
         My <span className="text-primary">work experience</span>
       </h1>
