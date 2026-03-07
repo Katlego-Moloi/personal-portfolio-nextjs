@@ -52,8 +52,13 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
+  const [mounted, setMounted] = useState(false);
   const leftLists = [".Net", "C#", "Typescript"];
   const rightLists = ["ReactJS", "SQL", "Python"];
+
+  useEffect(() => {
+    setMounted(true); // 2. Set to true on mount
+  }, []);
 
   const [copied, setCopied] = useState(false);
 
@@ -135,7 +140,7 @@ export const BentoGridItem = ({
           </div>
 
           {/* for the github 3d globe */}
-          {id === 2 && <GridGlobe />}
+          {id === 2 && mounted && <GridGlobe />}
 
           {/* Tech stack list div */}
           {id === 3 && (
@@ -167,12 +172,8 @@ export const BentoGridItem = ({
           )}
           {id === 6 && (
             <div className="mt-5 md:mt-0 relative">
-              <div
-                className={`absolute -bottom-5 right-0 ${copied ? "block" : "block"
-                  }`}
-              >
-                {/* <img src="/confetti.gif" alt="confetti" /> */}
-                <Lottie options={defaultOptions} height={200} width={400} />
+              <div className={`absolute -bottom-5 right-0 ${copied ? "block" : "hidden"}`}>
+                <Lottie key={String(copied)} options={defaultOptions} height={200} width={400} />
               </div>
 
               <MagicButton

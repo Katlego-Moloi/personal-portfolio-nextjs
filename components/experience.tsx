@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { workExperience, certs} from "@/data";
+import { workExperience } from "@/data";
 import { HoverBorderGradient } from "./ui/hover-border-gradient";
 
 export const Experience = () => {
@@ -12,6 +12,7 @@ export const Experience = () => {
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">
         {workExperience.map((card) => (
           <HoverBorderGradient
+            key={card.id}
             containerClassName="rounded-4xl bg-transparent"
             as="button"
             className="flex items-center space-x-2 bg-background/70"

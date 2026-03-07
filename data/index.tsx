@@ -1,6 +1,9 @@
 import { BsPersonBoundingBox } from "react-icons/bs";
+import { SlBadge } from "react-icons/sl";
 import { MdReviews, MdWork } from "react-icons/md";
 import { GrContactInfo } from "react-icons/gr";
+import { IconBrandGithub, IconBrandLinkedin, IconTerminal, IconBrandInstagram } from "@tabler/icons-react";
+
 
 export const navItems = [
   { name: "About", link: "#about", icon: <BsPersonBoundingBox />},
@@ -96,7 +99,7 @@ export const projects = [
     des: "My second personal portfolio website and introduction to React, Three.js and Tailwind.css",
     img: "/images/projects/jcmk.webp",
     iconLists: ["/icons/re.svg", "/icons/vite.svg", "/icons/ts.svg", "/icons/three.svg", "/icons/spring.svg"],
-    link: "https://github.com/Katlego-Moloi/personal-portfolio-react",
+    link: "https://jcmkreact.vercel.app",
   },
 ];
 
@@ -196,14 +199,27 @@ export const certs = [
 export const socialMedia = [
   {
     id: 1,
-    img: "/git.svg",
+    icon: <IconBrandGithub/>,
+    link: "https://github.com/Katlego-Moloi"
   },
   {
     id: 2,
-    img: "/twit.svg",
+    icon: <IconBrandLinkedin/>,
+    link: "https://www.linkedin.com/in/tubatse-katlego-moloi/"
   },
   {
     id: 3,
-    img: "/link.svg",
+    icon: <SlBadge/>,
+    link: "https://www.credly.com/users/tubatse-katlego-moloi"
+  },
+  {
+    id: 4,
+    icon: <IconTerminal/>,
+    link: "https://leetcode.com/u/user6473KO/"
+  },
+  {
+    id: 5,
+    icon: <IconBrandInstagram/>,
+    link: "https://www.instagram.com/i.luv.bluee/"
   },
 ];
