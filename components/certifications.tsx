@@ -23,7 +23,7 @@ export const Certifications = () => {
               <div className="flex-shrink-0 w-64 flex flex-col items-center group p-6 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-primary/30">
                 <img src={cert.img} alt={cert.label} className="rounded-xl flex "/>
                 <p className="text-sm text-center font-bold mt-7">{cert.label}</p>
-                 <span class="mt-5 w-0 h-1 bg-primary transition-all duration-300-translate-x-1/2 group-hover:w-full"></span>
+                 <span className="mt-5 w-0 h-1 bg-primary transition-all duration-300-translate-x-1/2 group-hover:w-full"></span>
               </div>
             </a>
           ))}
@@ -33,7 +33,7 @@ export const Certifications = () => {
               <div className="flex-shrink-0 w-64 flex flex-col items-center group p-6 transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-primary/30">
                 <img src={cert.img} alt={cert.label} className="rounded-xl flex "/>
                 <p className="text-sm text-center font-bold mt-7">{cert.label}</p>
-                 <span class="mt-5 w-0 h-1 bg-primary transition-all duration-300-translate-x-1/2 group-hover:w-full"></span>
+                 <span className="mt-5 w-0 h-1 bg-primary transition-all duration-300-translate-x-1/2 group-hover:w-full"></span>
               </div>
             </a>
           ))}
