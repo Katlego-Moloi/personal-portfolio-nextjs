@@ -27,11 +27,12 @@ const HeroSection = () => {
             exploring data, and documenting the journey one line at a time.
           </p>
 
-          <a href="#portfolio">
+          <a href="#certs">
             <MagicButton 
               title="Show My work"
               icon={ <MdWork /> }
               position='right'
+
             />
 
           </a>
