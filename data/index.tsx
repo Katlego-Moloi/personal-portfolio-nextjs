@@ -79,6 +79,13 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
+    title: "Bunny Apple Treats",
+    des: "A sheek and stylish website for a bakery including an admin dashboard built on neon and blob for data storage",
+    img: "/images/projects/bunny-apple.webp",
+    iconLists: ["icons/next.svg", "/icons/tail.svg", "/icons/ts.svg", "/icons/neon.svg", ],
+    link: "https://www.bunnyappletreats.co.za/",
+  },
+    id: 2,
     title: "MoneyMart",
     des: "A simple and elegant one page website for financial service providers originally built using WebStudio but migrated to Next.js",
     img: "/images/projects/money-mart.webp",
@@ -86,7 +93,7 @@ export const projects = [
     link: "https://www.moneymartloansandinvestments.co.za/",
   },
   {
-    id: 2,
+    id: 3,
     title: "KovsieCash Web & Mobile app",
     des: "Final year software engineering project, a banking app for the university built using .net MVC and Android Studio",
     img: "/images/projects/kovsie-cash.webp",
@@ -94,7 +101,7 @@ export const projects = [
     link: "https://github.com/Katlego-Moloi/KovsieCash_WebApp",
   },
   {
-    id: 3,
+    id: 4,
     title: "React + Vite Personal Portfolio",
     des: "My second personal portfolio website and introduction to React, Three.js and Tailwind.css",
     img: "/images/projects/jcmk.webp",
