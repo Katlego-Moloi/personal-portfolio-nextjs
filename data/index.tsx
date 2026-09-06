@@ -85,6 +85,7 @@ export const projects = [
     iconLists: ["icons/next.svg", "/icons/tail.svg", "/icons/ts.svg", "/icons/neon.svg", ],
     link: "https://www.bunnyappletreats.co.za/",
   },
+  {
     id: 2,
     title: "MoneyMart",
     des: "A simple and elegant one page website for financial service providers originally built using WebStudio but migrated to Next.js",
